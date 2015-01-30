@@ -1,5 +1,8 @@
-import com.decorator.demo.*;
+import com.decorator.demo.buzzCoffee.*;
+import com.decorator.demo.io.LowerCaseInputStream;
 import org.junit.Test;
+
+import java.io.*;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -32,5 +35,22 @@ public class DecoratorPatternTest {
         beverage = new Mocha(beverage);
         assertEquals(beverage.cost(), .30 + .33 + 1.99,0.01);
         assertEquals(beverage.getDescription(),"Espresso, milk, mocha grande");
+    }
+
+
+    @Test
+    public void test_lowercase_inputStream(){
+        int c;
+        try {
+            StringBuilder sb = new StringBuilder();
+            InputStream in = new LowerCaseInputStream(new BufferedInputStream(this.getClass().getClassLoader().getResourceAsStream("text.txt")));
+            while ((c = in.read()) > 0){
+                sb.append((char)c);
+            }
+
+            assertEquals("redheadDuck duck = new redheadDuck();".toLowerCase().trim(),sb.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
