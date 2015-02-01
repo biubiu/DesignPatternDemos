@@ -8,10 +8,7 @@ public class ChocolateBoiler {
 	//the volatile ensures that multiple threads handle the unique instance correctly
 	//when it is being initialized to the singleton instance
 	private static volatile ChocolateBoiler uniqueChocolateBoiler;
-/*	public ChocolateBoiler(){
-		empty = false;
-		boiled = false;
-	}*/
+
 	
 	private ChocolateBoiler() {
 		empty = false;
@@ -24,8 +21,9 @@ public class ChocolateBoiler {
 		}
 		return uniqueChocolateBoiler;
 	}*/
-	
-	
+
+
+	//double-checked locking
 	public static ChocolateBoiler getInstance(){
 		if(uniqueChocolateBoiler == null){
 			synchronized (ChocolateBoiler.class) {
