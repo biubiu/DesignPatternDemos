@@ -1,9 +1,9 @@
 package com.singleton.demo;
 
 public class ChocolateBoiler {
-	private boolean empty;
-	private boolean boiled;
-	//private static ChocolateBoiler uniqueChocolateBoiler;
+    private boolean empty;
+    private boolean boiled;
+    //private static ChocolateBoiler uniqueChocolateBoiler;
 	
 	//the volatile ensures that multiple threads handle the unique instance correctly
 	//when it is being initialized to the singleton instance
