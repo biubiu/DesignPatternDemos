@@ -7,30 +7,14 @@ public class TurkeyAdapter  implements Duck{
 		this.turkey = turkey; 
 	}
 	@Override
-	public void quack() {
-		turkey.gobble();		
+	public String quack() {
+		return turkey.gobble();
 	}
 
 	@Override
-	public void fly() {
-		turkey.fly();
+	public String fly() {
+	    return 	turkey.fly();
 	}
-	
-	public static void main(String[] args) {
-		Duck duck = new MallardDuck();
-		
-		Turkey wildTurkey = new WildTurkey();
-		Duck turkeyAdapater = new TurkeyAdapter(wildTurkey);
-		
-		System.out.println( " turkey says ");
-		testDuck(duck);
-		
-		System.out.println("\n TurkeyAdapater says ..");
-		testDuck(turkeyAdapater);
-	}
-	
-	static void testDuck(Duck duck){
-		duck.quack();
-		duck.fly();
-	}
+
+
 }

@@ -24,7 +24,7 @@ public class DecoratorPatternTest {
 
         Beverage beverage = new Mocha(new Milk(new Espresso()));
         assertEquals(beverage.cost(), .20 + 0.33 + 1.99);
-        assertEquals(beverage.getDescription(),"Espresso, milk, mocha");
+        assertEquals(beverage.getDescription(),"Espresso, milk, mocha tall");
     }
 
     @Test

@@ -12,6 +12,7 @@ public class ForeConditionDisplay implements Observer,DisplayElement{
 
 	public ForeConditionDisplay(Observable observable) {
 		this.observable = observable;
+        observable.addObserver(this);
 	}
 	@Override
 	public void update(Observable o, Object arg) {

@@ -4,14 +4,17 @@ public class WildTurkey implements Turkey{
 
 
 	@Override
-	public void fly() {
-		System.out.println("Flying with a long distance");
+	public String fly() {
+        String fly = "Flying with a long distance";
+        System.out.println(fly);
+        return fly;
 	}
 
 	@Override
-	public void gobble() {
-		System.out.println(" Gobble gobble");
-		
+	public String gobble() {
+        String gobble = " Gobble gobble";
+        System.out.println(gobble);
+        return gobble;
 	}
 
 }
