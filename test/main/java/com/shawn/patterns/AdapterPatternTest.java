@@ -1,3 +1,5 @@
+package com.shawn.patterns;
+
 import com.adapter.demo.Duck;
 import com.adapter.demo.Turkey;
 import com.adapter.demo.TurkeyAdapter;

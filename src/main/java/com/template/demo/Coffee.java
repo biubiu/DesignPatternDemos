@@ -3,11 +3,15 @@ package com.template.demo;
 public class Coffee extends CaffineBeverageWithHook{
 		
 	@Override
-	void brew() {
-		System.out.println(" Dripping coffee thru filter");
+	public String brew() {
+        String brew = " Dripping coffee through filter";
+        System.out.println(brew);
+        return brew;
 	}
 	@Override
-	void addCondiments() {
-		System.out.println(" Adding sugar and milk");
+	public String addCondiments() {
+        String condiments = "sugar and milk";
+        System.out.println(condiments);
+        return condiments;
 	}
 }

@@ -11,9 +11,9 @@ public abstract class CaffineBeverageWithHook {
 		}
 	}
 
-	abstract void brew();
+	public abstract String brew();
 
-	abstract void addCondiments();
+	public abstract String addCondiments();
 
 	void boilWater() {
 		System.out.println("Boiling water");

@@ -1,3 +1,4 @@
+package com.shawn.patterns;
 
 import com.strategy.demo.MallardDuck;
 import com.strategy.demo.RedheadDuck;

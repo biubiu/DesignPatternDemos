@@ -1,3 +1,5 @@
+package com.shawn.patterns;
+
 import com.factory.demo.pizzastore.ChicagoStylePizzaStore;
 import com.factory.demo.pizzastore.NYStylePizzaStore;
 import com.factory.demo.pizzastore.Pizza;

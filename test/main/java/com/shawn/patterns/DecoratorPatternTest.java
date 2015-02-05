@@ -1,3 +1,5 @@
+package com.shawn.patterns;
+
 import com.decorator.demo.buzzCoffee.*;
 import com.decorator.demo.io.LowerCaseInputStream;
 import org.junit.Test;

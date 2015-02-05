@@ -1,4 +1,4 @@
-package com.composite.demo;
+package com.iterator.demo;
 
 import com.google.common.base.Objects;
 import com.google.common.base.Objects.ToStringHelper;

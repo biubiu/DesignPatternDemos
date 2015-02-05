@@ -1,3 +1,5 @@
+package com.shawn.patterns;
+
 import com.command.demo.simple.*;
 import org.junit.Test;
 

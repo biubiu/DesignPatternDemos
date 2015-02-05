@@ -1,3 +1,4 @@
+package com.shawn.patterns;
 
 import com.google.common.eventbus.EventBus;
 import com.observer.demo.weatherStationV1.CurrentConditionDisplay;
